@@ -1,0 +1,33 @@
+#container-main{
+    background-image: url('../img/elyse-turton-4M18kgGwg6E-unsplash.jpg');
+    background-position:center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.opac{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    overflow-y: scroll;
+
+}
+#form-login{
+    background-color: white;
+    padding: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+}
+
+#form-login h2{
+    color: #007bff;
+}
+
+#form-login input[type="submit"]:focus{
+    background-color: #007bff;
+    color: white;
+}
+
+#container-register{
+}

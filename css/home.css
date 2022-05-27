@@ -1,0 +1,237 @@
+body{
+
+}
+
+
+/*ID que contém a imagem usada como fundo principal*/
+#main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url('../img/elyse-turton-4M18kgGwg6E-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+
+/*Área pricipal, usada para opacidade no fundo do background*/
+main{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, .8);
+    overflow-y: scroll;
+
+}
+
+/*Ocultando a barra de navegação no desktop*/
+#navbar{
+    display: none;
+}
+ /*Cabeçalho do Menu de navegação*/
+.offcanvas-header{
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*Tamanho do container da Imagem de perfil do Menu de navegação*/
+.perfil-img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+ }
+
+ /*Imagem de perfil do Menu de navegação*/
+ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #0d6efd ;
+}
+
+/*Tamanho do mapa do menu de navegação*/
+.mapa{
+    width: 100%;
+    height: 300px;
+}
+
+/*Borda de cima para o footer da Área do Logo*/
+.footer-area-logo{
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+
+.color-top{
+    height: 80px;
+}
+
+/*Tamanho do container com Imagem de perfil para o desktop*/
+.img-perfil-desktop{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0;
+}
+
+/*Linha que contém o container da imagem*/
+#row-img-profile{
+    margin-top: -50px;
+}
+
+/*Lista no container do perfil de usuário*/
+#profile-list{
+    border-top: none;
+    border-radius: 0px;
+}
+
+/*Container com Imagem de perfil do post*/
+.img-profile-post{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+/*Botão de compra no post*/
+#btn-buy{
+    border-radius: 100px;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin-left: 10px;
+}
+
+/*Imagem do post*/
+#img-post-theme{
+    object-fit:cover;
+    border-radius: 0;
+    border: none ;
+}
+
+/*Parágrafo de info. do post*/
+#info-post{
+    text-align: justify;
+    border-top:1px solid rgb(211, 211, 211);;
+}
+
+/*Footer do post*/
+.post-footer{
+    border-top:1px solid rgb(211, 211, 211);;
+}
+
+.list-post-footer{
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-post-footer li{
+    display: inline-block;
+}
+
+.list-post-footer li a{
+    text-decoration: none;
+}
+
+/*--------------------*/
+
+/*Modal Interessados-Post*/
+#modalContent{
+    width: 300px;
+    height: 500px;
+}
+
+#modalBody{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*--------------------*/
+
+
+/*Área de comentários*/
+
+#comments-area{
+    max-height: 700px;
+    overflow-y: scroll;
+}
+
+
+
+
+
+/*Tamanhos de tela mobile*/
+
+@media screen and (max-width:991.9px){
+    /*Mostrando a barra de navegação no mobile*/
+    #navbar{
+        display: block;
+    }
+    /*Ocultar coluna do perfil e logo*/
+    #col-desktop-profile-logo{
+        display: none;
+    }
+    main>.container{
+        padding-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    /*Imagem de perfil do post*/
+    #img-profile-col{
+        width:100%;
+        text-align: center !important;
+    }        
+    /*Nome de usuário do post*/
+    #username-profile-col{
+        width: 100%;
+        text-align: center;
+     
+    }
+
+    /*linha data do evento e icones de mídia*/
+    #line-date-and-incon-media{
+        margin-top: 0 !important;
+    }
+
+    /*Coluna data do evento*/
+    #col-date{
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    /*Coluna mídia*/
+    #col-icon-media{
+        width: 100%;
+        text-align: center !important;
+
+    }
+
+     /*Título do evento*/
+     #event-title{
+        text-align: center;
+        margin-top: 20px !important;
+     }
+     /*Parágrafo de ingresso*/
+     #ingress-buy{
+         text-align: center;
+     }
+     
+     .post-footer{
+         padding-top: 8px !important;
+     }
+
+     .list-post-footer li{
+        display: inline-block;
+        margin: 0 !important ;
+    }
+ 
+}
+
+/*Modal fundo*/
+.modal{
+    background-color: rgba(0,0,0,.8) !important;
+}

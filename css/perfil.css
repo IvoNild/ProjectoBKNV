@@ -1,0 +1,136 @@
+body{
+
+}
+
+
+/*ID que contém a imagem usada como fundo principal*/
+#main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url('../img/elyse-turton-4M18kgGwg6E-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+
+/*Área pricipal, usada para opacidade no fundo do background*/
+main{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, .8);
+    overflow-y: scroll;
+
+}
+
+/*Ocultando a barra de navegação no desktop*/
+#navbar{
+    display: none;
+}
+
+
+ /*Cabeçalho do Menu de navegação*/
+ .offcanvas-header{
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*Tamanho do container da Imagem de perfil do Menu de navegação*/
+.perfil-img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+ }
+
+ /*Imagem de perfil do Menu de navegação*/
+ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #0d6efd ;
+}
+/*Borda de cima para o footer da Área do Logo*/
+.footer-area-logo{
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.color-top{
+    height: 80px;
+}
+
+/*Tamanho do container com Imagem de perfil para o desktop*/
+.img-perfil-desktop{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0;
+}
+
+
+/*Linha que contém o container da imagem*/
+#row-img-profile{
+    margin-top: -50px;
+}
+
+/*Lista no container do perfil de usuário*/
+#profile-list{
+    border-top: none;
+    border-radius: 0px;
+}
+
+#profile-list .list-group-item{
+    padding: 0;
+}
+
+.list-group .list-group-item a.nav-link{
+   padding: 10px 0;
+}
+
+.ativo{
+    background-color: #0d6efd;
+    color: white;
+}
+
+.ativo:hover{
+    color: white;
+}
+
+/*Tamanhos de tela mobile*/
+
+@media screen and (max-width:991.9px){
+    /*Mostrando a barra de navegação no mobile*/
+    #navbar{
+        display: block;
+    }
+    /*Ocultar coluna do perfil e logo*/
+    #col-desktop-profile-logo{
+        display: none;
+    }
+    main>.container{
+        padding-top: 50px;
+    }
+
+}
+.modal{
+    background-color: rgba(0,0,0,.8) !important;
+}
+
+#modalInteresses .modal-content{
+    height: auto;
+}
+
+#modalInteresses .modal-content #user-list{
+    height: 300px;  
+    overflow-y: scroll;
+
+}
+
+#modalInteressados .modal-content #user-list{
+    height: 300px;  
+    overflow-y: scroll;
+
+}
